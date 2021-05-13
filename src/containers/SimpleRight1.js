@@ -50,7 +50,7 @@ const SimpleRight1 = props => {
   const { className } = props;
   const [skills, setSkills] = useState(initState);
   useEffect(() => {
-    const url = 'http://keylearningservercors-env.eba-fs83ec2u.us-east-2.elasticbeanstalk.com/skills';
+    const url = "http://keylearningservercors-env.eba-fs83ec2u.us-east-2.elasticbeanstalk.com/skills";
     axios
       .get(url)
       .then(res => setSkills(res.data))
